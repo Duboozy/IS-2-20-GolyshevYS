@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IS-2-20-GolyshevYS", "IS-2-20-GolyshevYS\IS-2-20-GolyshevYS.csproj", "{778EBA38-1BBB-4ADA-9B03-B9FB877F6DCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1", "Task1\Task1.csproj", "{F9361FD1-F077-4635-A15A-C9B2351AB10E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2", "Task2\Task2.csproj", "{426717B2-3311-4825-945A-02C8C3628169}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{778EBA38-1BBB-4ADA-9B03-B9FB877F6DCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{778EBA38-1BBB-4ADA-9B03-B9FB877F6DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{778EBA38-1BBB-4ADA-9B03-B9FB877F6DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{778EBA38-1BBB-4ADA-9B03-B9FB877F6DCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9361FD1-F077-4635-A15A-C9B2351AB10E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9361FD1-F077-4635-A15A-C9B2351AB10E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9361FD1-F077-4635-A15A-C9B2351AB10E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9361FD1-F077-4635-A15A-C9B2351AB10E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{426717B2-3311-4825-945A-02C8C3628169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{426717B2-3311-4825-945A-02C8C3628169}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{426717B2-3311-4825-945A-02C8C3628169}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{426717B2-3311-4825-945A-02C8C3628169}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64370729-3318-49B5-93E3-A975077063B6}
+	EndGlobalSection
+EndGlobal
