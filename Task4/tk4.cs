@@ -85,7 +85,7 @@ namespace Task4
             string i2 = "";
             string i3 = "";
             string i4 = "";
-            string sql = ($"SELECT t_database.id AS 'ID', t_database.fio AS 'Имя', t_database.date_of_Birght AS 'Дата рождения', t_database.photoUrl AS 'Фото' FROM t_database WHERE t_database.id = " + id);
+            string sql = ($"SELECT t_datatime.id AS 'ID', t_datatime.fio AS 'Имя', t_datatime.date_of_Birth AS 'Дата рождения', t_datatime.photoUrl AS 'Фото' FROM t_datatime WHERE t_datatime.id = " + id);
             MySqlCommand cmd = new MySqlCommand(sql, сon);
             MySqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
@@ -108,11 +108,9 @@ namespace Task4
             try
             {
                 сon.Open();
-                //Запрос на выборку ссылки изображения из бд
-                string sql1 = "SELECT t_database.photoUrl AS 'Фото' FROM t_database WHERE t_database.id = " + id;
-                MySqlCommand cmd1 = new MySqlCommand(sql1, сon);
+                string sqlq = "SELECT t_datatime.photoUrl AS 'Фото' FROM t_datatime WHERE t_datatime.id = " + id;
+                MySqlCommand cmd1 = new MySqlCommand(sqlq, сon);
                 string pictur = cmd1.ExecuteScalar().ToString();
-                //Отправляем ссылку фото на обработку в метод InicilPhoto
                 InicilPhoto(pictur);
                 MySqlDataReader reader = cmd1.ExecuteReader();
                 сon.Close();
