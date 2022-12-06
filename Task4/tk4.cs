@@ -13,9 +13,9 @@ using MySql.Data.MySqlClient;
 
 namespace Task4
 {
-    public partial class Form1 : Form
+    public partial class tk4 : Form
     {
-        public Form1()
+        public tk4()
         {
             InitializeComponent();
         }
@@ -34,7 +34,7 @@ namespace Task4
         {
             datatable.Clear();
 
-            string sqlI1 = "SELECT t_datatime.id AS 'ID', t_datatime.fio AS 'Имя', t_datatime.date_of_Birth AS 'Дата рождения', t_datatime.photoUrl AS 'Фото' FROM t_datatime;";
+            string sqlI1 = ($"SELECT t_datatime.id AS 'ID', t_datatime.fio AS 'Имя', t_datatime.date_of_Birth AS 'Дата рождения', t_datatime.photoUrl AS 'Фото' FROM t_datatime;");
             сon.Open();
 
             mahtable.SelectCommand = new MySqlCommand(sqlI1, сon);
@@ -85,7 +85,7 @@ namespace Task4
             string i2 = "";
             string i3 = "";
             string i4 = "";
-            string sql = $"SELECT t_database.id AS 'ID', t_database.fio AS 'Имя', t_database.date_of_Birght AS 'Дата рождения', t_database.photoUrl AS 'Фото' FROM t_database WHERE t_database.id = " + id;
+            string sql = ($"SELECT t_database.id AS 'ID', t_database.fio AS 'Имя', t_database.date_of_Birght AS 'Дата рождения', t_database.photoUrl AS 'Фото' FROM t_database WHERE t_database.id = " + id);
             MySqlCommand cmd = new MySqlCommand(sql, сon);
             MySqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
@@ -96,7 +96,7 @@ namespace Task4
                 i4 = reader[3].ToString();
             }
             reader.Close();
-            label1.Text = $"Код: " + i1 + "\n" + "Имя: " + i2 + "\n" + "Дата рождения: " + i3;
+            label1.Text = ($"Id: " + i1 + "\n" + "Имя: " + i2 + "\n" + "Дата рождения: " + i3);
             label1.Visible = true;
             сon.Close();
         }
@@ -119,7 +119,7 @@ namespace Task4
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ошибка выгрузки фото " + ex.Message);
+                MessageBox.Show("Ошибка" + ex.Message);
             }
         }
     }

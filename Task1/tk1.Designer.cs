@@ -1,6 +1,6 @@
 ﻿namespace Task1
 {
-    partial class Form1
+    partial class tk1
     {
         /// <summary>
         /// Обязательная переменная конструктора.

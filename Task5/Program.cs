@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Task1
+namespace Task5
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace Task1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new tk1());
+            Application.Run(new tk5());
         }
     }
 }

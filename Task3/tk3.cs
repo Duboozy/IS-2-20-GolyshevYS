@@ -12,9 +12,9 @@ using static Task3.Program;
 
 namespace Task3
 {
-    public partial class Form1 : Form
+    public partial class tk3 : Form
     {
-        public Form1()
+        public tk3()
         {
             InitializeComponent();
         }
@@ -26,10 +26,10 @@ namespace Task3
         public void Infomation()
         {
             datatable.Clear();
-            string sqlI = "SELECT Patient.id_patient AS 'ID', Patient.fio_patient AS 'Name', Patient.number_patient AS 'Phone', Patient.number_policy_patient AS 'NumberPolicy' FROM Patient JOIN Main ON Patient.id_patient = Main.ID_Patient";
+            string sqlq = "SELECT Patient.id_patient AS 'ID', Patient.fio_patient AS 'Name', Patient.number_patient AS 'Phone', Patient.number_policy_patient AS 'NumberPolicy' FROM Patient JOIN Main ON Patient.id_patient = Main.ID_Patient";
             сon.Open();
 
-            mahtable.SelectCommand = new MySqlCommand(sqlI, сon);
+            mahtable.SelectCommand = new MySqlCommand(sqlq, сon);
             mahtable.Fill(datatable);
 
             bas.DataSource = datatable;
@@ -72,7 +72,7 @@ namespace Task3
             string i2 = "";
             string i3 = "";
             string i4 = "";
-            string sql = $"SELECT Patient.id_patient AS 'ID', Patient.fio_patient AS 'Name', Patient.number_patient AS 'Phone', Patient.number_policy_patient AS 'NumberPolicy' FROM Patient JOIN Main ON Patient.id_patient = Main.ID_Patient WHERE Patient.ID = " + id;
+            string sql = ($"SELECT Patient.id_patient AS 'ID', Patient.fio_patient AS 'Name', Patient.number_patient AS 'Phone', Patient.number_policy_patient AS 'NumberPolicy' FROM Patient JOIN Main ON Patient.id_patient = Main.ID_Patient WHERE Patient.ID = " + id);
             MySqlCommand cmd = new MySqlCommand(sql, сon);
             MySqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())

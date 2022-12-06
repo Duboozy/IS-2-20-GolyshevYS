@@ -11,9 +11,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Task1
 {
-    public partial class Form1 : Form
+    public partial class tk1 : Form
     {
-        public Form1()
+        public tk1()
         {
             InitializeComponent();
         }

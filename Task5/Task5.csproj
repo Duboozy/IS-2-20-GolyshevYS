@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8E731D45-24EC-46D0-BBB1-CD32943ECEE3}</ProjectGuid>
+    <ProjectGuid>{BB6F597A-B3C8-4143-BFDC-13AD1B040937}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Task4</RootNamespace>
-    <AssemblyName>Task4</AssemblyName>
+    <RootNamespace>Task5</RootNamespace>
+    <AssemblyName>Task5</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -84,16 +84,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="tk4.cs">
+    <Compile Include="tk5.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="tk4.Designer.cs">
-      <DependentUpon>tk4.cs</DependentUpon>
+    <Compile Include="tk5.Designer.cs">
+      <DependentUpon>tk5.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="tk4.resx">
-      <DependentUpon>tk4.cs</DependentUpon>
+    <EmbeddedResource Include="tk5.resx">
+      <DependentUpon>tk5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

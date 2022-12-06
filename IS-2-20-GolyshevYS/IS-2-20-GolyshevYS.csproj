@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +78,28 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Task1\Task1.csproj">
+      <Project>{f9361fd1-f077-4635-a15a-c9b2351ab10e}</Project>
+      <Name>Task1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Task2\Task2.csproj">
+      <Project>{426717b2-3311-4825-945a-02c8c3628169}</Project>
+      <Name>Task2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Task3\Task3.csproj">
+      <Project>{5eeb48ec-2544-44e4-86d3-380c36277817}</Project>
+      <Name>Task3</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Task4\Task4.csproj">
+      <Project>{8e731d45-24ec-46d0-bbb1-cd32943ecee3}</Project>
+      <Name>Task4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Task5\Task5.csproj">
+      <Project>{bb6f597a-b3c8-4143-bfdc-13ad1b040937}</Project>
+      <Name>Task5</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
